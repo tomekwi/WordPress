@@ -2,7 +2,5 @@
 , "description": "Bare Wordpress package fitted with composer and ready to be thrown into its own fresh directory."
 , "require":
 	{ "composer/installers": "~1.0"
-	, "php": "~5.3.0"
-	, "lib-curl": "*"
 	}
 }
