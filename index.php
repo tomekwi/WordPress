@@ -1,17 +1,8 @@
 <?php
 /**
- * Front to the WordPress application. This file doesn't do anything, but loads
- * wp-blog-header.php which does and tells WordPress to load the theme.
- *
- * @package WordPress
+ * This file is a proxy redirecting the user to the admin panel.
+ * 
+ * @author Tomasz Wiszniewski <twiszniewski@gmail.com>
  */
 
-/**
- * Tells WordPress to load the WordPress theme and output it.
- *
- * @var bool
- */
-define('WP_USE_THEMES', true);
-
-/** Loads the WordPress Environment and Template */
-require('./wp-blog-header.php');
+header('Location: wp-admin/');

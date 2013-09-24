@@ -1,7 +1,7 @@
 <?php
 /**
  * The base configurations of the WordPress.
- *
+ * 
  * This file has the following configurations: MySQL settings, Table Prefix,
  * Secret Keys, WordPress Language, and ABSPATH. You can find more information
  * by visiting {@link http://codex.wordpress.org/Editing_wp-config.php Editing
@@ -32,6 +32,15 @@ define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
+
+/**
+ * It's most important that you keep the following settings and adjust them 
+ * to your needs. They allow you to keep the core files out of the root directory.
+ */
+define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT']);
+define('WP_CONTENT_URL', 'your_root_url');
+define('WP_HOME', 'your_root_url');
+define('WP_SITEURL', 'your_root_url/wordpress-core');
 
 /**#@+
  * Authentication Unique Keys and Salts.
